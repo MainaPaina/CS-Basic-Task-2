@@ -1,0 +1,13 @@
+PROCESS main
+    INPUT navn
+    SWITCH timenow
+        CASE "morgen"
+            PRINT morgen-text
+        CASE "dag"
+            PRINT dag-text
+        CASE "kveld"
+            PRINT kveld-text
+        CASE "natt"
+            PRINT natt-text
+    END SWITCH
+END PROCESS main
